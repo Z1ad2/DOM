@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>DOM</title>
+<link rel="stylesheet" href="style.css" >
+
+</head>
+
+<body>
+
+<div>
+
+<h1>Programming languages<h1>
+    <p>there are some programming languages :</p>
+
+<ul class="list">
+    
+    <li>JavaScript</li>
+    <li>Kotlin</li>
+    <li>Swift </li>
+    
+
+</ul>
+</div>
+<h3>clicks: <span id = 'clicks'>0</span></h3>
+<button type="button" Onclick="add()">+</button>
+
+
+
+
+<script>
+
+let languagelist = document.querySelector('.list')
+let ios = document.querySelectorAll('li')[2]
+//ios.remove()
+console.log(languagelist)
+
+let clicks = 0;
+function add(){
+    clicks++;
+    document.getElementById('clicks').innerText = clicks
+
+};
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
